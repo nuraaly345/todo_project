@@ -26,5 +26,5 @@ urlpatterns = [
 
 
     #todo
-    path('current/', currenttodos, name="currentodos"),
+    path('current/', currenttodos, name="currenttodos"),
 ]
