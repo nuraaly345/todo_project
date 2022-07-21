@@ -26,4 +26,5 @@ urlpatterns = [
 
 
     #todo
+    path('current/', currenttodos, name="currentodos"),
 ]
