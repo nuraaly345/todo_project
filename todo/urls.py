@@ -23,8 +23,10 @@ urlpatterns = [
 
     #Auth
     path('signup/', signup, name="signupuser"),
+    path('logout/', logoutuser, name="logout"),
 
 
     #todo
     path('current/', currenttodos, name="currenttodos"),
+    path('', home, name="home"),
 ]
