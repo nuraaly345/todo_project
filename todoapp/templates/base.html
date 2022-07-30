@@ -1,17 +1,17 @@
 
 {% if user.is_authenticated %}
 
-{{ user.username }}
+ <h2>Учурдагы колдонуучунун аты:{{ user.username }}</h2>
 <form action="{% url 'logout' %}" method='POST'>
 
     {% csrf_token %}
-    <button type="submit">Logout</button>
+    <button type="submit">Чыгуу</button>
 </form>
 
 {% else %}
 
-<h1><a href="#">SignUp</a></h1>
-<h1><a href="#">Login</a></h1>
+<h1><a href="{% url 'signupuser' %}">Катталуу</a></h1>
+<h1><a href="{% url 'login' %}">Кирүү</a></h1>
 
 
 {% endif %}

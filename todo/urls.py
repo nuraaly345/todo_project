@@ -23,6 +23,7 @@ urlpatterns = [
 
     #Auth
     path('signup/', signup, name="signupuser"),
+    path('login/', loginuser, name="login"),
     path('logout/', logoutuser, name="logout"),
 
 
