@@ -28,6 +28,7 @@ urlpatterns = [
 
 
     #todo
+    path('create/', createtodo, name="createtodo"),
     path('current/', currenttodos, name="currenttodos"),
     path('', home, name="home"),
 ]
