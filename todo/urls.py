@@ -30,5 +30,6 @@ urlpatterns = [
     #todo
     path('create/', createtodo, name="createtodo"),
     path('current/', currenttodos, name="currenttodos"),
+    path('todo/<int:todo_pk>/', viewtodo, name="viewtodo"),
     path('', home, name="home"),
 ]
